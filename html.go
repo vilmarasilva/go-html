@@ -1,4 +1,4 @@
-package main
+package html
 
 import (
 	"fmt"
@@ -9,7 +9,7 @@ import (
 
 // <-chan - canal somente-leitura
 
-func titulo(urls ...string) <-chan string {
+func Titulo(urls ...string) <-chan string {
 	c := make(chan string)
 	for _, url := range urls {
 		go func(url string) {
