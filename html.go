@@ -1,12 +1,5 @@
 package html
 
-import (
-	"fmt"
-	"io/ioutil"
-	"net/http"
-	"regexp"
-)
-
 // <-chan - canal somente-leitura
 
 func Titulo(urls ...string) <-chan string {
